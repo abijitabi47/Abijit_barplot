@@ -1,0 +1,15 @@
+# Node.js (Next.js frontend)
+node_modules
+.next
+out
+
+# Python (FastAPI backend)
+__pycache__/
+*.pyc
+venv/
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
