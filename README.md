@@ -2,7 +2,7 @@
 
 An interactive full-stack data visualization tool built with:
 
-- ⚛️ **Frontend**: Next.js  + Plotly.js  
+- ⚛️ **Frontend**: Next.js   
 - 🚀 **Backend**: FastAPI (Python)  
 - 🗂 Upload CSV files, customize plot titles, axis, colors, and export graphs.
 
