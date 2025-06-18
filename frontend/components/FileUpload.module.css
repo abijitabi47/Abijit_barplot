@@ -1,0 +1,33 @@
+.uploadSection {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.uploadButton {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  user-select: none;
+}
+
+.uploadButton:hover {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  transform: translateY(-2px);
+}
+
+.uploadButton:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}

@@ -1,0 +1,212 @@
+.visualizer {
+  font-family: 'Inter', sans-serif;
+  color: #111827; /* Tailwind slate-900 */
+}
+
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  background: #f1f5f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  gap: 1.25rem;
+  border: 1px solid #e5e7eb; /* Tailwind border-gray-200 */
+  background-color: #f9fafb;
+
+}
+
+.controlGroup input[type="text"] {
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+}
+
+
+.controlGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.yListHorizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.yItemHorizontal {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+  transition: background 0.2s ease;
+}
+
+.yItemHorizontal:hover {
+  background: #f1f5f9;
+}
+
+.yLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+.controlGroup input[type="text"],
+.controlGroup select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.controlGroup input[type="color"] {
+  height: 38px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+}
+
+.plotWrapper {
+  min-height: 400px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  padding-bottom: 3rem; /* 👈 add this */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+
+
+.exportButton {
+  margin-top: 1rem;
+  padding: 12px 20px;
+  background: #000; /* Dark like your site theme */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+}
+
+.exportButton:hover {
+  background: #222;
+}
+
+
+.toggle {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle:checked {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.toggle:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+}
+
+.generateButton {
+  margin-top: 1rem;
+  padding: 12px 20px;
+  background-color: #111827; /* dark gray (like your site) */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.generateButton:hover {
+  background-color: #1f2937; /* darker hover */
+}
+
+/* --- Upload Section Styles --- */
+.uploadSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.uploadButton {
+  padding: 12px 24px;
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover {
+  background-color: #1e40af;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.uploadInput {
+  background-color: #fff !important;
+  color: #374151;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.uploadInput::file-selector-button {
+  background-color: #f9f9f9;
+  color: rgb(5, 5, 5);
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.uploadInput::file-selector-button:hover {
+  background-color: #f0f0f0;
+}

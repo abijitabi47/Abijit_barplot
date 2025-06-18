@@ -1,0 +1,88 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #4f7c82;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+.App {
+  background-color: #b8e3e9;
+  border-radius: 15px;
+  padding: 30px;
+  width: 95%;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Grouping form controls for layout */
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100px;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+/* Style for all inputs, selects */
+input[type="text"],
+select,
+input[type="color"] {
+  background-color: #93b1b5;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+/* Style for text specifically */
+input[type="text"] {
+  border: 1px solid #af2727;
+}
+
+/* File upload */
+input[type="file"] {
+  background-color: #d5d811;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Button style */
+button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #d5d811;
+  color: rgb(6, 6, 6);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+  color: white;
+}

@@ -1,0 +1,88 @@
+:root {
+  --primary-bg: linear-gradient(135deg, #ffffff, #ffffff);
+  --card-bg: rgba(255, 255, 255, 0.75);
+  --accent: #000000;
+  --text-dark: #1c1c1c;
+  --radius: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--primary-bg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding-top: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100px;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+input[type="text"],
+select,
+input[type="color"] {
+  background-color: #93b1b5;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+input[type="text"] {
+  border: 1px solid #af2727;
+}
+
+input[type="file"] {
+  background-color: #d5d811;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #d5d811;
+  color: rgb(6, 6, 6);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+  color: white;
+}
