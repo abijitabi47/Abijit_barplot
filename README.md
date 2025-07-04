@@ -4,35 +4,19 @@ An interactive full-stack data visualization tool built with:
 
 - ⚛️ **Frontend**: Next.js  
 - 🚀 **Backend**: FastAPI (Python)  
-- 🗂️ Upload CSV files, customize chart types, plot titles, axis, colors, DPI, and export graphs (frontend or backend).
 
 ---
 
 ## 🔧 Project Structure
 
 Abijit_barplot/
+
 ├── backend/ ← FastAPI server (CSV parsing + Matplotlib)
+
 ├── frontend/ ← Next.js app (UI & Plotly rendering)
+
 └── .gitignore
 
-
----
-
-## ✅ Features
-
-- Upload `.csv` dataset
-- Select **multiple X and Y axes**
-- Customize:
-  - Title
-  - X and Y labels
-  - Y-axis colors
-  - Export format: PNG, JPEG, SVG, WebP
-  - DPI for high-quality image export
-- Two visualization modes:
-  - 🎨 **Frontend Plot** (Plotly.js – interactive)
-  - 🖼 **Backend Plot** (Matplotlib – static export)
-
----
 
 ## 🚀 Getting Started
 
