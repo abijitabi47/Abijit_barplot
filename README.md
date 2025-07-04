@@ -2,19 +2,35 @@
 
 An interactive full-stack data visualization tool built with:
 
-- ⚛️ **Frontend**: Next.js   
+- ⚛️ **Frontend**: Next.js  
 - 🚀 **Backend**: FastAPI (Python)  
-- 🗂 Upload CSV files, customize plot titles, axis, colors, and export graphs.
+- 🗂️ Upload CSV files, customize chart types, plot titles, axis, colors, DPI, and export graphs (frontend or backend).
 
 ---
 
 ## 🔧 Project Structure
 
-my-next-app/
-├── backend/ ← FastAPI server (CSV parsing API)
-├── frontend/ ← Next.js app (UI & chart rendering)
+Abijit_barplot/
+├── backend/ ← FastAPI server (CSV parsing + Matplotlib)
+├── frontend/ ← Next.js app (UI & Plotly rendering)
 └── .gitignore
 
+
+---
+
+## ✅ Features
+
+- Upload `.csv` dataset
+- Select **multiple X and Y axes**
+- Customize:
+  - Title
+  - X and Y labels
+  - Y-axis colors
+  - Export format: PNG, JPEG, SVG, WebP
+  - DPI for high-quality image export
+- Two visualization modes:
+  - 🎨 **Frontend Plot** (Plotly.js – interactive)
+  - 🖼 **Backend Plot** (Matplotlib – static export)
 
 ---
 
@@ -22,8 +38,8 @@ my-next-app/
 
 ### 🧠 Requirements
 
-- Python 3.9+  
-- Node.js 16+  
+- Python 3.9+
+- Node.js 16+
 - Git
 
 ---
@@ -31,25 +47,37 @@ my-next-app/
 ### ▶️ Run Backend (FastAPI)
 
 1. Open terminal in `/backend/`
-2. Install dependencies
+2. Install dependencies:
+
 ```bash
+pip install -r requirements.txt
+```
+Start server:
+Open terminal in /backend/
+bash
+```
 uvicorn main:app --reload
 ```
-Server runs at: http://localhost:8000
-API docs at: http://localhost:8000/docs
+API: http://localhost:8000
 
-▶️ Run Frontend (Next.js)
+Docs: http://localhost:8000/docs
+
+
+Run Frontend (Next.js)
 Open terminal in /frontend/
 
 Install packages:
 
-```bash
+bash
+```
 npm install
 ```
 Start dev server:
 
-```bash
+bash
+```
 npm run dev
 ```
-App runs at: http://localhost:3000
+Frontend: http://localhost:3000
+
 
