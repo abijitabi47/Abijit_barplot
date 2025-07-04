@@ -37,9 +37,8 @@ Abijit_barplot/
 pip install -r requirements.txt
 ```
 Start server:
-Open terminal in /backend/
-bash
-```
+
+```bash
 uvicorn main:app --reload
 ```
 API: http://localhost:8000
@@ -48,18 +47,17 @@ Docs: http://localhost:8000/docs
 
 
 Run Frontend (Next.js)
+
 Open terminal in /frontend/
 
 Install packages:
 
-bash
-```
+```bash
 npm install
 ```
 Start dev server:
 
-bash
-```
+```bash
 npm run dev
 ```
 Frontend: http://localhost:3000
